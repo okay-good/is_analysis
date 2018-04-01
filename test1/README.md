@@ -12,7 +12,7 @@
     </tr>
 </table>
 <br>
-![](https://github.com/FateBerserker/is_analysis/blob/master/test1/headImage.jpg '头像')
+<img src="./headImage.jpg"/>
 <hr>
 <h2>一.考试及成绩管理流程图</h2>
 #1.1代码如下所示:
