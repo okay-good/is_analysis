@@ -58,7 +58,7 @@ stop<br>
 @enduml<br>
 <hr>
 ###图一：<br>
-![](./flow1.jpg '流程图一')
+![](https://github.com/FateBerserker/is_analysis/blob/master/test1/flow1.jpg '流程图一')
 <hr>
 <h2>二.客户维修服务流程</h2>
 #2.1代码如下所示:
