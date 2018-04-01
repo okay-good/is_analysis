@@ -16,6 +16,7 @@
 <hr>
 <h2>一.考试及成绩管理流程图</h2>
 #1.1代码如下所示:
+<br>
 @startuml<br>
 |教务处|<br>
 start<br>
@@ -64,6 +65,7 @@ stop<br>
 <hr>
 <h2>二.客户维修服务流程</h2>
 #2.1代码如下所示:
+<br>
 @startuml<br>
 |客户|<br>
 start<br>
