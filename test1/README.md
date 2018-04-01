@@ -10,8 +10,8 @@
 		<td>软件工程(2015-4)</td>
 		<td>蒋春林</td>		
     </tr>
-</table>
-![](./headImage.jpg '流程图一')
+</table><br>
+![](./headImage.jpg '头像')
 <hr>
 <h2>一.考试及成绩管理流程图</h2>
 #1.1代码如下所示:
@@ -57,7 +57,7 @@ end fork<br>
 stop<br>
 @enduml<br>
 <hr>
-###图一：
+###图一：<br>
 ![](./flow1.jpg '流程图一')
 <hr>
 <h2>二.客户维修服务流程</h2>
@@ -98,5 +98,5 @@ endfork<br>
 stop<br>
 @enduml<br>
 <hr>
-###图二：
+###图二：<br>
 ![](./flow2.jpg '流程图二')
