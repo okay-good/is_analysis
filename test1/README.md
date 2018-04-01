@@ -7,7 +7,7 @@
     </tr>
 	<tr>
         <td>201510414406</td>
-		<td>软件工程(2015-4)</td>
+		<td>2015-软件工程(4班)</td>
 		<td>蒋春林</td>		
     </tr>
 </table>
@@ -60,7 +60,7 @@ stop<br>
 <hr>
 ###图一：
 <br>
-![](https://github.com/FateBerserker/is_analysis/blob/master/test1/flow1.jpg '流程图一')
+<img src="./flow1.jpg"/>
 <hr>
 <h2>二.客户维修服务流程</h2>
 #2.1代码如下所示:
@@ -102,4 +102,4 @@ stop<br>
 <hr>
 ###图二：
 <br>
-![](https://github.com/FateBerserker/is_analysis/blob/master/test1/flow2.jpg '流程图二')
+<img src="./flow2.jpg"/>
