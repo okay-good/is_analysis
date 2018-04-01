@@ -4,15 +4,17 @@
         <td>学号</td>
 		<td>班级</td>
 		<td>姓名</td>
+		<td>头像</td>
     </tr>
 	<tr>
         <td>201510414406</td>
 		<td>2015-软件工程(4班)</td>
-		<td>蒋春林</td>		
+		<td>蒋春林</td>	
+		<td><img src="./headImage.jpg"/></td>	
     </tr>
 </table>
 <br>
-<img src="./headImage.jpg"/>
+
 <hr>
 <h2>一.考试及成绩管理流程图</h2>
 #1.1代码如下所示:
