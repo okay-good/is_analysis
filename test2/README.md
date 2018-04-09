@@ -86,27 +86,23 @@ Admin --> (增加图书)<br>
 &nbsp; &nbsp;&nbsp;-提示信息显示错误
 		</td>
 	</tr>
-	<tr>
-		<td colspan="2">业务规则</td>
-	</tr>
-	<tr>
-		<td colspan="2">1.</td>
-	</tr>
+	
 </table>
-3.1.2. 个人信息查询用例流程图源码:   
-@startuml   
-|教务处|   
-start  
-@startuml  
-start  
-:点击个人信息按钮;  
-:显示对应的个人信息;  
-stop  
-@enduml  
-stop  
-@enduml  
-3.1.3. 个人信息查询用例流程图:  
+3.1.2. 个人信息查询用例流程图源码:  <br> 
+@startuml   <br>
+|教务处|   <br>
+start  <br>
+@startuml  <br>
+start  <br>
+:点击个人信息按钮;<br>  
+:显示对应的个人信息; <br> 
+stop  <br>
+@enduml  <br>
+stop  <br>
+@enduml  <br>
+3.1.3. 个人信息查询用例流程图: <br> 
 <img src="1.png"></img>
+
 -----------------
 <h3>3.2 "查询书目"用例</h3>
 3.2.1. "查询书目"用例规约
@@ -155,15 +151,34 @@ stop
 &nbsp;&nbsp;&nbsp;-提示书名输入错误，请重新输入
 		</td>
 	</tr>
-	<tr>
-		<td colspan="2">业务规则</td>
-	</tr>
-	<tr>
-		<td colspan="2">1.</td>
-	</tr>
+	
 </table>
-3.2.2. 查询书目用例流程图源码:  
-3.2.3. 查询书目用例流程图  
+3.2.2. 查询书目用例流程图源码: <br> 
+@startuml <br>
+start <br>
+:登录; <br>
+:给出查询图书按钮; <br>
+:选择查询图书; <br>
+:列出所有图书信息; <br>
+:输入所需要查询的图书; <br>
+if(是否有该图书？) then (yes) <br>
+:显示该图书信息; <br>
+else (no) <br>
+:提示不存在该图书; <br>
+stop <br>
+endif <br>
+:选择查看书目信息; <br>
+if(是否有书目信息？) then (yes) <br>
+:显示该图书书目信息; <br>
+else (no) <br>
+:提示该图书没有书目信息; <br>
+endif <br>
+stop <br>
+@enduml <br>
+
+
+3.2.3. 查询书目用例流程图  <br>
+<img src="queryBook.png"></img>
 
 ------------------------------
 
@@ -210,16 +225,32 @@ stop
 &nbsp; &nbsp;&nbsp;-提示信息显示错误<br> 
 		</td>
 	</tr>
-	<tr>
-		<td colspan="2">业务规则</td>
-	</tr>
-	<tr>
-		<td colspan="2">1.</td>
-	</tr>
+	
 </table> 
-3.3.2.  "查询借阅情况"用例流程图源码:    
+3.3.2.  "查询借阅情况"用例流程图源码:<br>
+@startuml<br>
+start<br>
+:登录;<br>
+:给出查询借阅情况按钮;<br>
+:选择查询借阅情况;<br>
+:列出所有借阅信息;<br>
+if(是否存在借阅信息？) then (yes)<br>
+:输入所需要查询的借阅信息;<br>
+else (no)<br>
+:提示不存在任何借阅信息;<br>
+stop<br>
+endif<br>
+if(是否有此借阅信息？) then (yes)<br>
+:显示该借阅信息;<br>
+else (no)<br>
+:提示不存在该借阅信息;<br>
+endif<br>
+stop<br>
+@enduml<br>
+
 3.3.3.  "查询借阅情况"用例流程图
-   
+<img src="borrowInfo.png"></img>  
+ 
 --------------------------
 <h3>3.4 "预定图书"用例</h3>
 3.4.1. "预定图书"用例规约  
@@ -279,15 +310,34 @@ stop
 &nbsp; &nbsp;&nbsp;-提示预定图书失败<br> 
 		</td>
 	</tr>
-	<tr>
-		<td colspan="2">业务规则</td>
-	</tr>
-	<tr>
-		<td colspan="2">1.</td>
-	</tr>
+	
 </table>
-3.4.2. "预定图书"用例流程图源码:    
-3.4.3. "预定图书"用例流程图 
+3.4.2. "预定图书"用例流程图源码:  <br>
+@startuml<br>
+start<br>
+:登录;<br>
+:列出所有图书;<br>
+:选择预定图书;<br>
+if(是否有预定图书？) then (yes)<br>
+:显示该图书信息;<br>
+else (no)<br>
+:提示不存在此图书;<br>
+stop<br>
+endif<br>
+:预定图书;<br>
+:填写预定单;<br>
+if(图书是否全部借出？) then (yes)<br>
+:图书已全部借出，不能进行预定;<br>
+stop<br>
+else (no)<br>
+:确认预定信息;<br>
+endif<br>
+:保存预定单;<br>
+stop<br>
+@enduml<br>
+  
+3.4.3. "预定图书"用例流程图 <br>
+<img src="orderBook.png"></img>
 
 ------------------
 
@@ -345,15 +395,28 @@ stop
 &nbsp;&nbsp;&nbsp;-提示书名输入错误，取消失败，请重新输入
 		</td>
 	</tr>
-	<tr>
-		<td colspan="2">业务规则</td>
-	</tr>
-	<tr>
-		<td colspan="2">1.</td>
-	</tr>
+	
 </table>
-3.5.2. "取消预定"用例流程图源码:    
-3.5.3. "取消预定"用例流程图 
+3.5.2. "取消预定"用例流程图源码:<br> 
+@startuml<br>
+start<br>
+:登录;<br>
+:列出所有预定单;<br>
+:选择取消图书的预定单;<br>
+if(是否有该预定单？) then (yes)<br>
+:显示该预定单信息;<br>
+else (no)<br>
+:提示不存在此预定单;<br>
+stop<br>
+endif<br>
+:取消预定;<br>
+:确认预定单更新;<br>
+:保存新的预定单;<br>
+stop<br>
+@enduml<br>
+   
+3.5.3. "取消预定"用例流程图 <br>
+<img src="canle.png"></img>
 
 ------------------------
 <h3>3.6 "维护书目"用例</h3>
@@ -412,15 +475,34 @@ stop
 &nbsp;&nbsp;&nbsp;-提示暂时禁止维护该图书信息，请稍后重试<br>
 		</td>
 	</tr>
-	<tr>
-		<td colspan="2">业务规则</td>
-	</tr>
-	<tr>
-		<td colspan="2">1.</td>
-	</tr>
+	
 </table> 
-3.6.2. "维护书目"用例流程图源码:    
-3.6.3. "维护书目"用例流程图
+3.6.2. "维护书目"用例流程图源码: <br>
+@startuml<br>
+start<br>
+:登录;<br>
+:列出所有图书;<br>
+:选择所需要维护的图书;<br>
+if(是否有维护图书？) then (yes)<br>
+:显示该图书书目信息;<br>
+else (no)<br>
+:提示不存在该图书;<br>
+stop<br>
+endif<br>
+:维护书目;<br>
+if(是否有书目信息？) then (yes)<br>
+:填写书目新信息;<br>
+else (no)<br>
+:提示该图书没有书目信息;<br>
+stop<br>
+endif<br>
+:确认信息;<br>
+:更新信息;<br>
+stop<br>
+@enduml<br>
+   
+3.6.3. "维护书目"用例流程图<br>
+<img src="protect.png"></img>
 
 -------
 <h3>3.7 "增加图书"用例</h3>
@@ -481,15 +563,15 @@ stop
 &nbsp;&nbsp;&nbsp;-提示权限不足，不能维护增加信息<br>
 		</td>
 	</tr>
-	<tr>
-		<td colspan="2">业务规则</td>
-	</tr>
-	<tr>
-		<td colspan="2">1.</td>
-	</tr>
+	
 </table> 
-3.7.2. "增加图书"用例流程图源码:    
+3.7.2. "增加图书"用例流程图源码: <br>
+
+
+   
 3.7.3. "增加图书"用例流程图
+
+
 
 --------
 <h3>3.8 "维护读者信息"用例</h3>
@@ -551,15 +633,30 @@ stop
 &nbsp;&nbsp;&nbsp;-提示权限不足，不能维护读者信息<br>
 		</td>
 	</tr>
-	<tr>
-		<td colspan="2">业务规则</td>
-	</tr>
-	<tr>
-		<td colspan="2">1.</td>
-	</tr>
+	
 </table> 
-3.8.2. "维护读者信息"用例流程图源码:    
-3.8.3. "维护读者信息"用例流程图
+3.8.2. "维护读者信息"用例流程图源码:<br> 
+@startuml<br>
+start<br>
+:登录;<br>
+:列出所有读者信息;<br>
+:选择所需要维护的读者;<br>
+if(是否有维护读者？) then (yes)<br>
+:显示该读者信息;<br>
+else (no)<br>
+:提示不存在该读者;<br>
+stop<br>
+endif<br>
+:维护读者;<br>
+:填写读者新信息;<br>
+:确认信息;<br>
+:更新信息;<br>
+stop<br>
+@enduml<br>
+
+3.8.3. "维护读者信息"用例流程图<br>
+<img src="mainReader.png"></img>
+
 
 -----------
 <h3>3.9 "借出图书"用例</h3>
@@ -616,8 +713,35 @@ stop
 	
 	
 </table> 
-3.9.2. "借出图书"用例流程图源码:    
-3.9.3. "借出图书"用例流程图
+3.9.2. "借出图书"用例流程图源码: <br>
+  
+@startuml <br>
+start <br>
+:登录; <br>
+:列出所有图书; <br>
+:选择借出图书; <br>
+if(是否有借出图书？) then (yes) <br>
+:显示该图书信息; <br>
+else (no) <br>
+:提示不存在此图书; <br>
+stop <br>
+endif <br>
+:借出图书; <br>
+:填写借书单; <br>
+:确认库存; <br>
+if(是否有库存？) then (yes) <br>
+:确认借书单; <br>
+else (no) <br>
+:提示此图书没有库存; <br>
+stop <br>
+endif <br>
+:更新借书单; <br>
+:更新图书库存; <br>
+stop <br>
+@enduml <br>
+
+3.9.3. "借出图书"用例流程图  <br>
+<img src="borrow.png"></img>
 
 ----
 <h3>3.10 "归还图书"用例</h3>
@@ -676,48 +800,44 @@ stop
 &nbsp;&nbsp;&nbsp;-提示该读者并未借阅该图书，此图书的借阅者为另一读者<br>
 		</td>
 	</tr>
-	<tr>
-		<td colspan="2">业务规则</td>
-	</tr>
-	<tr>
-		<td colspan="2">1.</td>
-	</tr>
+	
 </table> 
-3.10.2. "归还图书"用例流程图源码:    
-@startuml  
-|借阅者|  
-start  
-:登陆;  
-if(忘记密码) then (是)  
-:找回密码;  
-else(否)  
-endif  
-:提供所还图书;  
-|管理员|  
-:检查图书;  
-if (图书是否损坏) then (是)  
-|还书者|  
-:办理赔偿手续;  
-|管理员|  
-else(否)  
-:输入图书信息;  
-fork  
-:验证图书信息;  
-fork again  
-:验证读者信息;  
-end fork  
-fork  
-:记录还书信息;  
-fork again  
-:修改图书状态;  
-fork again  
-:修改可借数量;  
-end fork  
-|管理员|  
-:确认图书归还完毕;  
-endif  
-stop  
-@enduml  
+3.10.2. "归还图书"用例流程图源码:<br>
+  
+@startuml  <br>
+|借阅者|  <br>
+start  <br>
+:登陆;  <br>
+if(忘记密码) then (是)  <br>
+:找回密码;  <br>
+else(否)  <br>
+endif  <br>
+:提供所还图书;  <br>
+|管理员|  <br>
+:检查图书;  <br>
+if (图书是否损坏) then (是)  <br>
+|还书者|  <br>
+:办理赔偿手续;  <br>
+|管理员|  <br>
+else(否)  <br>
+:输入图书信息; <br> 
+fork  <br>
+:验证图书信息; <br> 
+fork again <br> 
+:验证读者信息; <br> 
+end fork  <br>
+fork  <br>
+:记录还书信息;  <br>
+fork again  <br>
+:修改图书状态; <br> 
+fork again  <br>
+:修改可借数量;<br>  
+end fork  <br>
+|管理员|  <br>
+:确认图书归还完毕;  <br>
+endif  <br>
+stop  <br>
+@enduml  <br>
 
 3.10.3. "归还图书"用例流程图  <br>
 <img src="return.png"></img>
@@ -782,15 +902,8 @@ stop
 &nbsp;&nbsp;&nbsp;-提示权限不足，不能更新图书的库存<br>
 		</td>
 	</tr>
-	<tr>
-		<td colspan="2">业务规则</td>
-	</tr>
-	<tr>
-		<td colspan="2">1.</td>
-	</tr>
+	
 </table> 
-3.11.2. "库存更新"用例流程图源码:    
-3.11.3. "库存更新"用例流程图
 
 ------------
 
