@@ -24,14 +24,13 @@ Admin --> (库存更新)<br>
 Admin --> (增加图书)<br>
 
 
-
-(维护书目)  .> (查询书目) : include<br>
+(维护书目)  .> (查询书目) : include <br>
 (库存更新)  .> (查询书目) : include<br>
-(归还图书).>(罚款) : extend<br>
-(预定图书).>(取消预定) : extend<br>
-
+(归还图书)<.(罚款) : extend<br>
+(预定图书)<.(取消预定) : include<br>
 }<br>
 @enduml<br>
+
 <h3>1.2用例图如下:</h3>
 <img src="userCase.png"></img>
 <h1>2.参与者说明:</h1>
