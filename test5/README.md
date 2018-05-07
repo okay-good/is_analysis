@@ -299,6 +299,17 @@
 	<td></td>
 	<td>书名</td>
 </tr>
+
+<tr>
+	<td>author</td>
+	<td>varchar(64)</td>
+	<td></td>
+	<td>否</td>
+	<td></td>
+	<td></td>
+	<td>作者</td>
+</tr>
+
 <tr>
 	<td>price</td>
 	<td>float(7,2)</td>
@@ -366,8 +377,8 @@
 	<td>kindId</td>
 	<td>varchar(32)</td>
 	<td>外键</td>
-	<td></td>
 	<td>否</td>
+	<td></td>
 	<td>该值必须要在图书信息分类表中存在</td>
 	<td>图书的分类编号</td>
 </tr>
@@ -588,8 +599,8 @@
 <tr>
 	<td>bookId</td>
 	<td>int</td>
+	<td>外键</td>
 	<td>否</td>
-	<td></td>
 	<td></td>
 	<td>该值必须在图书表中存在</td>
 	<td>图书的ID值</td>
@@ -768,8 +779,772 @@
 	<td>分类描述信息</td>
 </tr>
 
+</table>
+
+
+## 2、主要界面的设计
+
+---
+### 1.借书界面设计  
+<img src=""/>
+
+### 2.还书界面设计  
+<img src=""/>
+
+### 3.增加图书界面设计  
+<img src=""/>
+
+### 4. 读者管理界面设计  
+<img src=""/>
+
+--------
+
+## 3、所有用例的API接口信息
+
+### **对管理员来说**
+### 1.维护书目
+- 功能: 管理员维护书目
+- 请求地址: http://bookmanagesystem/manager/fixBook
+- 请求方式: POST
+- 请求参数: 
+
+<table cellspacing="0">
+<tr>
+	<td>参数名称</td>
+	<td>必填</td>
+	<td>说明</td>
+</tr>
+<tr>
+	<td></td>
+	<td></td>
+	<td></td>
+</tr>
+</table>
+- 返回实例:
+<pre>
+{
+    "info": "感谢您的支持。",
+    "data": {
+        "nickname": "O记_Mega可达鸭",
+        "uid": "14361",
+        "signature": "呀  一不小心就进化了",
+        "score1": "322",
+        "real_nickname": "O记_Mega可达鸭",
+        "title": "Lv3 转正",
+        "avatar128": "http://upload.opensns.cn/Uploads_Avatar_14361_58e4b58fccf81.jpg?imageMogr2/crop/!260x260a6a22/thumbnail/128x128!",
+        "avatar512": "http://upload.opensns.cn/Uploads_Avatar_14361_58e4b58fccf81.jpg?imageMogr2/crop/!260x260a6a22/thumbnail/512x512!"
+    },
+    "code": 200
+}
+
+</pre>
+
+- 返回参数说明:
+<table cellspacing="0">
+<tr>
+	<td>参数名称</td>
+	<td>说明</td>
+</tr>
+<tr>
+	<td>info</td>
+	<td>维护书目操作的结果信息描述</td>
+</tr>
+<tr>
+	<td>data</td>
+	<td></td>
+</tr>
+<tr>
+	<td>code</td>
+	<td>维护书目操作的状态码</td>
+</tr>
+</table>
+
+---------
+### 2.库存更新
+- 功能: 管理员更新库存
+- 请求地址: http://bookmanagesystem/manager/stockUpdate
+- 请求方式: POST
+- 请求参数: 
+
+<table cellspacing="0">
+<tr>
+	<td>参数名称</td>
+	<td>必填</td>
+	<td>说明</td>
+</tr>
+<tr>
+	<td>bookId</td>
+	<td>是</td>
+	<td>图书的ID值</td>
+</tr>
+<tr>
+	<td>borrowableSize</td>
+	<td>是</td>
+	<td>增加的图书数量值，可以为负值，则为减少多少图书库存</td>
+</tr>
+</table>
+- 返回实例:
+<pre>
+{
+    "info": "图书库存更新成功",
+    "data": {
+        "id": "16445",
+        "name": "JavaEE高级开发技术",
+        "price": "25.3",
+        "publishName": "清华大学出版社",
+        "publishTime": "2012-02-02",
+        "borrowableSize": "21",
+		"borrowedSize": "13",
+        "sumBorrowSize": 780,
+		"kindId":34,
+        "ISBN":"978-7-302-41863-4",
+		"description":"图书的具体描述信息"
+    },
+    "code": 200
+}
+
+</pre>
+
+- 返回参数说明:
+<table cellspacing="0">
+<tr>
+	<td>参数名称</td>
+	<td>说明</td>
+</tr>
+<tr>
+	<td>info</td>
+	<td>操作的结果情况描述</td>
+</tr>
+<tr>
+	<td>data</td>
+	<td>返回更新库存后的图书信息</td>
+</tr>
+<tr>
+	<td>code</td>
+	<td>状态嘛，正常成功执行为200</td>
+</tr>
+</table>
+
+---------
+
+### 3.归还图书
+- 功能: 管理员处理图书归还
+- 请求地址: http://bookmanagesystem/manager/returnBook
+- 请求方式: POST
+- 请求参数: 
+
+<table cellspacing="0">
+<tr>
+	<td>参数名称</td>
+	<td>必填</td>
+	<td>说明</td>
+</tr>
+<tr>
+	<td>bookId</td>
+	<td>是</td>
+	<td>归还图书的ID值</td>
+</tr>
+<tr>
+	<td>studentId</td>
+	<td>是</td>
+	<td>还书人的ID值</td>
+</tr>
+<tr>
+	<td>managerId</td>
+	<td>是</td>
+	<td>处理此次还书的管理员的ID值</td>
+</tr>
+</table>
+- 返回实例:
+<pre>
+{
+    "info": "还书成功",
+    "data": null,
+    "code": 200
+}
+
+</pre>
+
+- 返回参数说明:
+<table cellspacing="0">
+<tr>
+	<td>参数名称</td>
+	<td>说明</td>
+</tr>
+<tr>
+	<td>info</td>
+	<td>操作的结果信息描述</td>
+</tr>
+<tr>
+	<td>status</td>
+	<td>执行持久化操作的结果</td>
+</tr>
+<tr>
+	<td>code</td>
+	<td>表示此次操作的结果正常执行</td>
+</tr>
+</table>
+
+---------
+
+### 4.借出图书
+- 功能: 管理员处理图书借出
+- 请求地址: http://bookmanagesystem/manager/borrowBook
+- 请求方式: POST
+- 请求参数: 
+
+<table cellspacing="0">
+<tr>
+	<td>参数名称</td>
+	<td>必填</td>
+	<td>说明</td>
+</tr>
+<tr>
+	<td>bookId</td>
+	<td>是</td>
+	<td>图书的ID值</td>
+</tr>
+<tr>
+	<td>studentId</td>
+	<td>是</td>
+	<td>学生的ID值</td>
+</tr>
+<tr>
+	<td>managerId</td>
+	<td>是</td>
+	<td>管理员的ID值</td>
+</tr>
+</table>
+- 返回实例:
+<pre>
+{
+    "info": "借书成功",
+	"data":null,
+	"code":200    
+}
+
+</pre>
+
+- 返回参数说明:
+<table cellspacing="0">
+<tr>
+	<td>参数名称</td>
+	<td>说明</td>
+</tr>
+<tr>
+	<td>info</td>
+	<td>对此次操作的结果描述</td>
+</tr>
+<tr>
+	<td>data</td>
+	<td>此次操作的返回数据部分为空</td>
+</tr>
+<tr>
+	<td>status</td>
+	<td>此次操作的状态标识信息</td>
+</tr>
+</table>
+
+---------
+
+### 5.维护读者信息
+- 功能: 管理员去维护读者的信息
+- 请求地址: http://bookmanagesystem/manager/fixReaderInfo
+- 请求方式: POST
+- 请求参数: 
+
+<table cellspacing="0">
+<tr>
+	<td>参数名称</td>
+	<td>必填</td>
+	<td>说明</td>
+</tr>
+<tr>
+	<td>studentId</td>
+	<td>是</td>
+	<td>读者的编号ID值</td>
+</tr>
+<tr>
+	<td>name</td>
+	<td>否</td>
+	<td>修改后的姓名值</td>
+</tr>
+<tr>
+	<td>age</td>
+	<td>否</td>
+	<td>修改后的年龄值</td>
+</tr>
+<tr>
+	<td>sex</td>
+	<td>否</td>
+	<td>修改后的性别值</td>
+</tr>
+<tr>
+	<td>tel</td>
+	<td>否</td>
+	<td>修改后的电话值</td>
+</tr>
+<tr>
+	<td>email</td>
+	<td>否</td>
+	<td>修改后的邮箱值</td>
+</tr>
+<tr>
+	<td>password</td>
+	<td>否</td>
+	<td>新的密码值</td>
+</tr>
 
 </table>
+- 返回实例:
+<pre>
+{
+    "info": "读者信息维护成功",
+    "data": {
+       "studentNo":"201510414406",
+		"account":"648779661615",
+		"name":"jcl",
+		"age":21,
+		"sex":"男",
+		"tel":"17723561489",
+		"major":"软件工程",
+		"academic":"信息科学与工程",
+		"email":"jcl@163.com",
+		"borrowedSize":3,
+		"borrowableSize:17,
+		"orderSize":0,
+		"lastLoginTime":"2015-02-04 14:12:14",
+		"address":"四川"
+    },
+    "code": 200
+}
+
+</pre>
+
+- 返回参数说明:
+<table cellspacing="0">
+<tr>
+	<td>参数名称</td>
+	<td>说明</td>
+</tr>
+<tr>
+	<td>info</td>
+	<td>操作的结果信息描述</td>
+</tr>
+<tr>
+	<td>data</td>
+	<td>修改读者成功后的读者信息</td>
+</tr>
+<tr>
+	<td>code</td>
+	<td>标志此次操作的结果状态码</td>
+</tr>
+</table>
+
+---------
+### 6.增加图书
+- 功能: 管理员增加图书信息
+- 请求地址: http://bookmanagesystem/manager/addBook
+- 请求方式: POST
+- 请求参数: 
+
+<table cellspacing="0">
+<tr>
+	<td>参数名称</td>
+	<td>必填</td>
+	<td>说明</td>
+</tr>
+<tr>
+	<td>name</td>
+	<td>是</td>
+	<td>图书名字</td>
+</tr>
+<tr>
+	<td>price</td>
+	<td>是</td>
+	<td>图书价格</td>
+</tr>
+<tr>
+	<td>publishName</td>
+	<td>是</td>
+	<td>出版社</td>
+</tr>
+<tr>
+	<td>publishTime</td>
+	<td>是</td>
+	<td>出版时间</td>
+</tr>
+<tr>
+	<td>borrowableSize</td>
+	<td>是</td>
+	<td>可借阅图书量</td>
+</tr>
+<tr>
+	<td>kindId</td>
+	<td>否</td>
+	<td>分类编号</td>
+</tr>
+<tr>
+	<td>ISBN</td>
+	<td>是</td>
+	<td>ISBN的值</td>
+</tr>
+<tr>
+	<td>description</td>
+	<td>否</td>
+	<td>图书描述</td>
+</tr>
+
+</table>
+- 返回实例:
+<pre>
+{
+    "info": "增加图书成功",
+    "data": null,
+    "code": 200
+}
+
+</pre>
+
+- 返回参数说明:
+<table cellspacing="0">
+<tr>
+	<td>参数名称</td>
+	<td>说明</td>
+</tr>
+<tr>
+	<td>info</td>
+	<td>增加图书操作的结果信息描述</td>
+</tr>
+<tr>
+	<td>data</td>
+	<td>此次操作的数据部分的返回值</td>
+</tr>
+<tr>
+	<td>code</td>
+	<td>增加图书操作的状态码</td>
+</tr>
+</table>
+
+---------
+
+
+### **对读者来说**
+
+### 1.查询书目
+- 功能: 读者查询图书书目信息
+- 请求地址: http://bookmanagesystem/reader/queryBook
+- 请求方式: POST
+- 请求参数: 
+
+<table cellspacing="0">
+<tr>
+	<td>参数名称</td>
+	<td>必填</td>
+	<td>说明</td>
+</tr>
+<tr>
+	<td>name</td>
+	<td>否</td>
+	<td>图书名字</td>
+</tr>
+<tr>
+	<td>author</td>
+	<td>否</td>
+	<td>图书作者</td>
+</tr>
+<tr>
+	<td>publishName</td>
+	<td>否</td>
+	<td>出版社名字</td>
+</tr>
+</table>
+- 返回实例:
+<pre>
+{
+    "info": "查询书目成功",
+    "data": {
+    [
+	{
+		"id": "16445",
+		"name": "JavaEE高级开发技术",
+		"price": "25.3",
+		"publishName": "清华大学出版社",
+		"publishTime": "2012-02-02",
+		"borrowableSize": "21",
+		"borrowedSize": "13",
+		"sumBorrowSize": 780,
+		"kindId":34,
+		"ISBN":"978-7-302-41863-4",
+		"description":"图书的具体描述信息"			
+	},
+	{
+		"id": "9979422",
+		"name": "MySQL从入门到精通",
+		"price": "55.3",
+		"publishName": "浙江大学出版社",
+		"publishTime": "2018-12-04",
+		"borrowableSize": "14",
+		"borrowedSize": "20",
+		"sumBorrowSize": 1245,
+		"kindId":48,
+		"ISBN":"978-7-32-4163-5",
+		"description":"适合于初学者的数据库入门级图书"	
+	},
+	......
+	]
+    },
+    "code": 200
+}
+
+</pre>
+
+- 返回参数说明:
+<table cellspacing="0">
+<tr>
+	<td>参数名称</td>
+	<td>说明</td>
+</tr>
+<tr>
+	<td>info</td>
+	<td>此次操作的结果信息描述</td>
+</tr>
+<tr>
+	<td>data</td>
+	<td>返回查询到所有图书的详细信息</td>
+</tr>
+<tr>
+	<td>code</td>
+	<td>此次操作的状态码</td>
+</tr>
+</table>
+
+---------
+### 2.预定图书
+- 功能: 读者预定图书
+- 请求地址: http://bookmanagesystem/reader/orderBook
+- 请求方式: POST
+- 请求参数: 
+
+<table cellspacing="0">
+<tr>
+	<td>参数名称</td>
+	<td>必填</td>
+	<td>说明</td>
+</tr>
+<tr>
+	<td>studentId</td>
+	<td>是</td>
+	<td>预订者的ID值</td>
+</tr>
+<tr>
+	<td>bookId</td>
+	<td>是</td>
+	<td>图书信息的ID值</td>
+</tr>
+</table>
+- 返回实例:
+<pre>
+{
+    "info": "图书预定成功",
+    "data": null,
+    "code": 200
+}
+
+</pre>
+
+- 返回参数说明:
+<table cellspacing="0">
+<tr>
+	<td>参数名称</td>
+	<td>说明</td>
+</tr>
+<tr>
+	<td>info</td>
+	<td>预定图书结果的信息描述</td>
+</tr>
+<tr>
+	<td>data</td>
+	<td>预定图书操作的数据返回</td>
+</tr>
+<tr>
+	<td>code</td>
+	<td>预定图书操作的状态码</td>
+</tr>
+</table>
+
+---------
+### 3.取消预订
+- 功能: 读者取消图书的预定
+- 请求地址: http://bookmanagesystem/reader/cancelOrder
+- 请求方式: POST
+- 请求参数: 
+
+<table cellspacing="0">
+<tr>
+	<td>参数名称</td>
+	<td>必填</td>
+	<td>说明</td>
+</tr>
+<tr>
+	<td>studentId</td>
+	<td>是</td>
+	<td>读者的ID值</td>
+</tr>
+<tr>
+	<td>bookId</td>
+	<td>是</td>
+	<td>图书的ID值</td>
+</tr>
+</table>
+- 返回实例:
+<pre>
+{
+    "info": "取消图书预定信息成功。",
+    "data": null,
+    "code": 200
+}
+
+</pre>
+
+- 返回参数说明:
+<table cellspacing="0">
+<tr>
+	<td>参数名称</td>
+	<td>说明</td>
+</tr>
+<tr>
+	<td>info</td>
+	<td>取消图书预定操作的结果信息描述</td>
+</tr>
+<tr>
+	<td>data</td>
+	<td>取消图书预定操作的数据部分的值</td>
+</tr>
+<tr>
+	<td>code</td>
+	<td>此次操作的状态码</td>
+</tr>
+</table>
+
+---------
+### 4.查询个人借阅情况
+- 功能: 管理员查询个人借阅情况
+- 请求地址: http://bookmanagesystem/reader/queryBorrowInfo
+- 请求方式: POST
+- 请求参数: 
+
+<table cellspacing="0">
+<tr>
+	<td>参数名称</td>
+	<td>必填</td>
+	<td>说明</td>
+</tr>
+<tr>
+	<td>studentId</td>
+	<td>是</td>
+	<td>读者的ID值</td>
+</tr>
+</table>
+- 返回实例:
+<pre>
+{
+    "info": "个人信息如下",
+    "data": {
+		"borrowedSize":3,
+		"borrowableSize":17
+    },
+    "code": 200
+}
+
+</pre>
+
+- 返回参数说明:
+<table cellspacing="0">
+<tr>
+	<td>参数名称</td>
+	<td>说明</td>
+</tr>
+<tr>
+	<td>info</td>
+	<td>查询借阅操作的结果描述</td>
+</tr>
+<tr>
+	<td>data</td>
+	<td>返回对应读者的借阅信息</td>
+</tr>
+<tr>
+	<td>code</td>
+	<td>查询借阅信息的状态码</td>
+</tr>
+</table>
+
+---------
+### 5.查询个人信息
+- 功能: 读者查询个人信息
+- 请求地址: http://bookmanagesystem/reader/queryPersonalInfo
+- 请求方式: POST
+- 请求参数: 
+
+<table cellspacing="0">
+<tr>
+	<td>参数名称</td>
+	<td>必填</td>
+	<td>说明</td>
+</tr>
+<tr>
+	<td>studentId</td>
+	<td>是</td>
+	<td>读者的ID值</td>
+</tr>
+</table>
+- 返回实例:
+<pre>
+{
+    "info": "查询个人信息的结果如下.",
+    "data": {
+		"studentNo":"201510414406",
+		"account":"648779661615",
+		"name":"jcl",
+		"age":21,
+		"sex":"男",
+		"tel":"17723561489",
+		"major":"软件工程",
+		"academic":"信息科学与工程",
+		"email":"jcl@163.com",
+		"borrowedSize":3,
+		"borrowableSize:17,
+		"orderSize":0,
+		"lastLoginTime":"2015-02-04 14:12:14",
+		"address":"四川"
+    },
+    "code": 200
+}
+
+</pre>
+
+- 返回参数说明:
+<table cellspacing="0">
+<tr>
+	<td>参数名称</td>
+	<td>说明</td>
+</tr>
+<tr>
+	<td>info</td>
+	<td>查询个人信息操作的结果描述信息</td>
+</tr>
+<tr>
+	<td>data</td>
+	<td>对应的具体的个人信息情况</td>
+</tr>
+<tr>
+	<td>code</td>
+	<td>查询操作的状态码</td>
+</tr>
+</table>
+
+
+
 
 
 

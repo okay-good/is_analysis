@@ -54,6 +54,7 @@ class 账号 {<br>
 class 图书 {<br>
 - 编号<br>
 - 名字<br>
+- 作者<br>
 - 价格<br>
 - 出版社<br>
 - 出版时间<br>
