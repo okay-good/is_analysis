@@ -1,6 +1,6 @@
 ﻿$axure.loadCurrentPage({
   "url":"studentinfo.html",
-  "generationDate":new Date(1527499506074.21),
+  "generationDate":new Date(1527499894828.28),
   "isCanvasEnabled":false,
   "variables":["OnLoadVariable"],
   "page":{

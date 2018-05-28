@@ -1,0 +1,106 @@
+@startuml
+class University{
+id (学校的主键值)
+code (学校代码)
+name (学校名字)
+location (学习所在地址)
+level (学校等级)
+headmaster (校长名字)
+}
+
+class Academy{
+ id (学院ID值)
+ name (学院名字)
+ universityId (学校的ID值)
+ }
+
+class Account{
+id (账号的主键ID值)
+universityId (学校表的ID值)
+account (登录账号)
+password (登录密码MD5加密)
+role (角色 2:老师 1:教务管理人员 0:学生)
+isAlive (是否可用 1:可用 0:不可用)
+}
+
+class Student {
+id (学生信息主键)
+studentNo (学号，与账号表的账号一样)
+accountId (账号表的主键值)
+name (学生姓名)
+sex (性别)
+age (年龄)
+academyId (学院Id值)
+headImage (个人照片)
+idCard (身份证号码)
+major (专业)
+grade (年级)
+classNo (班级)
+classId (所属班级ID值)
+}
+
+class Teacher{
+id (老师信息主键)
+accountId (账号表的主键值)
+teacherNo (教师编号)
+name (姓名)
+sex (性别)
+age (年龄)
+position (职称)
+degree (学历)
+headImage (个人照片)
+idCard (身份证号码)
+}
+
+class Course{
+id (课程的主键值)
+name (课程名字)
+academyId (开课学院Id值)
+teacherIds (上课老师的ID值，可能多个老师授课)
+startTime (开课时间)
+grade (开课年级)
+term (学期)
+studentIds (学生的ID值集合，多个学生选择)
+}
+
+class Class{
+id (班级的ID值)
+academyId(所在学院Id值)
+grade (年级)
+size (学生总数)
+headMasterId (班主任编号)
+}
+
+class Experiment{
+id (实验ID值)
+name (实验名字)
+teacherId (实验发布的老师的编号)
+time (发布的时间)
+desc (实验要求描述)
+courseId (所属课程)
+}
+
+
+class ExperimentScore{
+id (实验评分的ID值)
+score (实验得分)
+kind (分类 如:代码，文档等)
+weight (所占权重)
+time (评分日期)
+experimentId (实验的ID值)
+mark (评语)
+}
+
+Account "*" --"1" University
+Student "1" -- "1" Account
+Teacher "1" -- "1" Account
+Student "*" -- "1" Class
+Teacher "1" -- "*" Class
+Student "*" -- "1" Course
+Teacher "1" -- "*" Course
+Experiment "*" -- "1" Course
+ExperimentScore "*" -- "1" Experiment
+Academy "*" -- "1" University
+Class "*" --"1" Academy
+Course "*" --"1" Academy
+@enduml
