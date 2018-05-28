@@ -1,0 +1,284 @@
+﻿body {
+  margin:0px;
+  background-image:none;
+  position:static;
+  left:auto;
+  width:700px;
+  margin-left:0;
+  margin-right:0;
+  text-align:left;
+}
+#base {
+  position:absolute;
+  z-index:0;
+}
+#u0 {
+  position:absolute;
+  left:240px;
+  top:60px;
+  width:460px;
+  height:430px;
+}
+#u0_img {
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:460px;
+  height:430px;
+}
+#u1 {
+  position:absolute;
+  left:2px;
+  top:207px;
+  width:456px;
+  visibility:hidden;
+  word-wrap:break-word;
+}
+#u2 {
+  position:absolute;
+  left:650px;
+  top:80px;
+  width:40px;
+  height:19px;
+  font-size:16px;
+}
+#u2_img {
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:40px;
+  height:19px;
+}
+#u3 {
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:40px;
+  word-wrap:break-word;
+}
+#u4 {
+  position:absolute;
+  left:320px;
+  top:140px;
+  width:200px;
+  height:25px;
+}
+#u4_input {
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:200px;
+  height:25px;
+  background-image:;
+  background-color:#E4E4E4;
+  text-align:left;
+  font-family:'Arial';
+  font-size:13px;
+  color:#000000;
+  font-weight:normal;
+  font-style:normal;
+  text-decoration:none;
+}
+#u5 {
+  position:absolute;
+  left:509px;
+  top:145px;
+  width:21px;
+  height:10px;
+}
+#u5_img {
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:21px;
+  height:10px;
+}
+#u6 {
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:21px;
+  word-wrap:break-word;
+}
+#u7 {
+  position:absolute;
+  left:320px;
+  top:175px;
+  width:200px;
+  height:25px;
+}
+#u7_input {
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:200px;
+  height:25px;
+  background-image:;
+  background-color:#E4E4E4;
+  text-align:left;
+  font-family:'Arial';
+  font-size:13px;
+  color:#000000;
+  font-weight:normal;
+  font-style:normal;
+  text-decoration:none;
+}
+#u8 {
+  position:absolute;
+  left:320px;
+  top:215px;
+  width:200px;
+  height:25px;
+}
+#u8_input {
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:200px;
+  height:25px;
+  background-image:;
+  background-color:#E4E4E4;
+  text-align:left;
+  font-family:'Arial';
+  font-size:13px;
+  color:#000000;
+  font-weight:normal;
+  font-style:normal;
+  text-decoration:none;
+}
+#u9 {
+  position:absolute;
+  left:320px;
+  top:250px;
+  width:200px;
+  height:25px;
+}
+#u9_input {
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:200px;
+  height:25px;
+  background-image:;
+  background-color:#E4E4E4;
+  text-align:left;
+  font-family:'Arial';
+  font-size:13px;
+  color:#000000;
+  font-weight:normal;
+  font-style:normal;
+  text-decoration:none;
+}
+#u10 {
+  position:absolute;
+  left:320px;
+  top:285px;
+  width:200px;
+  height:25px;
+}
+#u10_input {
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:200px;
+  height:25px;
+  background-image:;
+  background-color:#E4E4E4;
+  text-align:left;
+  font-family:'Arial';
+  font-size:13px;
+  color:#000000;
+  font-weight:normal;
+  font-style:normal;
+  text-decoration:none;
+}
+#u11 {
+  position:absolute;
+  left:320px;
+  top:355px;
+  width:200px;
+  height:25px;
+}
+#u11_input {
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:200px;
+  height:25px;
+  background-image:;
+  background-color:#E4E4E4;
+  text-align:left;
+  font-family:'Arial';
+  font-size:13px;
+  color:#000000;
+  font-weight:normal;
+  font-style:normal;
+  text-decoration:none;
+}
+#u12 {
+  position:absolute;
+  left:360px;
+  top:410px;
+  width:100px;
+  height:25px;
+}
+#u12_input {
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:100px;
+  height:25px;
+  background-image:url(../../resources/images/transparent.gif);
+  text-align:center;
+  font-family:'Arial';
+  font-size:16px;
+  color:#FF0000;
+  font-weight:normal;
+  font-style:normal;
+  text-decoration:none;
+}
+#u13 {
+  position:absolute;
+  left:260px;
+  top:80px;
+  width:40px;
+  height:19px;
+  font-size:16px;
+}
+#u13_img {
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:40px;
+  height:19px;
+}
+#u14 {
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:40px;
+  word-wrap:break-word;
+}
+#u15 {
+  position:absolute;
+  left:320px;
+  top:320px;
+  width:200px;
+  height:25px;
+}
+#u15_input {
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:200px;
+  height:25px;
+  background-image:;
+  background-color:#E4E4E4;
+  text-align:left;
+  font-family:'Arial';
+  font-size:13px;
+  color:#000000;
+  font-weight:normal;
+  font-style:normal;
+  text-decoration:none;
+}
