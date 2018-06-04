@@ -31,7 +31,8 @@
 </tr>
 </table>
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;返回实例:
-    {
+
+	    {
 		"data":[
 				{
 				"studentNo":"201510414406",
@@ -47,7 +48,8 @@
 			   ],
 		"status":"success",
 		"msg":"学生信息列表查询成功!"
-	}
+		}
+
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;返回参数说明:
 <table cellspacing="0" style="width:600px;">
 <tr>

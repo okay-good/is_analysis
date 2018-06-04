@@ -41,7 +41,8 @@
 </tr>
 </table>
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;返回实例:
-    {
+
+	    {
 		"data":{
 			"account":"201510414406",
 			"name":"李建军",
@@ -51,7 +52,8 @@
 				},
 		"status":"success",
 		"msg":"个人信息修改成功!"
-	}
+		}
+
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;返回参数说明:
 <table cellspacing="0" style="width:600px;">
 <tr>
