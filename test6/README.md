@@ -26,11 +26,11 @@
 ### 界面设计参见:<a href="https://FateBerserker.github.io/is_analysis/test6/UI/index.html">https://FateBerserker.github.io/is_analysis/test6/UI/index.html
 </a>
 
-## 3.用例图设计 <a href="../src/UseCase.puml">源码</a>
+## 3.用例图设计 <a href="./src/UseCase.puml">源码</a>
 
 <img src="UseCase.png"/>
 
-## 4.类图设计 <a href="../src/Class.puml">源码</a>
+## 4.类图设计 <a href="./src/Class.puml">源码</a>
 
 <img src="Class.png"/> 
 
