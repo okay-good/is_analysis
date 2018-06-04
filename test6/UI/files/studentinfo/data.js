@@ -1,0 +1,387 @@
+﻿$axure.loadCurrentPage({
+  "url":"studentinfo.html",
+  "generationDate":new Date(1528116432151.63),
+  "isCanvasEnabled":false,
+  "variables":["OnLoadVariable"],
+  "page":{
+    "packageId":"4659cb8756034399b450a74ae9c38287",
+    "type":"Axure:Page",
+    "name":"studentInfo",
+    "notes":{
+},
+    "style":{
+      "baseStyle":"627587b6038d43cca051c114ac41ad32",
+      "pageAlignment":"near",
+      "fill":{
+        "fillType":"solid",
+        "color":0xFFFFFFFF},
+      "image":null,
+      "imageHorizontalAlignment":"near",
+      "imageVerticalAlignment":"near",
+      "imageRepeat":"auto",
+      "favicon":null,
+      "sketchFactor":"0",
+      "colorStyle":"appliedColor",
+      "fontName":"应用字体",
+      "borderWidth":"0"},
+    "adaptiveStyles":{
+},
+    "interactionMap":{
+},
+    "diagram":{
+      "objects":[{
+          "id":"03af19c03f0e41e6b1189b04239b0cd2",
+          "label":"",
+          "type":"flowShape",
+          "styleType":"flowShape",
+          "visible":true,
+          "style":{
+            "location":{
+              "x":240,
+              "y":60},
+            "size":{
+              "width":520,
+              "height":430}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"99887a46e27b43c78e240f83758899ea",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "location":{
+                  "x":240,
+                  "y":60},
+                "size":{
+                  "width":520,
+                  "height":430}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"images/studentinfo/u0.png"}},
+{
+          "id":"a37b3d08506946d483d7e983d1a7b7f2",
+          "label":"",
+          "type":"textBox",
+          "styleType":"textBox",
+          "visible":true,
+          "style":{
+            "fill":{
+              "fillType":"solid",
+              "color":0xFFE4E4E4},
+            "location":{
+              "x":320,
+              "y":140},
+            "size":{
+              "width":200,
+              "height":25}},
+          "adaptiveStyles":{
+}},
+{
+          "id":"95f69dd281d04b748ca510232b109d1f",
+          "label":"",
+          "type":"buttonShape",
+          "styleType":"paragraph",
+          "visible":true,
+          "style":{
+            "location":{
+              "x":509,
+              "y":145},
+            "size":{
+              "width":21,
+              "height":10}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"d8cb23c391bf4bbc8914ef5bd07e1ae0",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "location":{
+                  "x":509,
+                  "y":145},
+                "size":{
+                  "width":21,
+                  "height":10}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"resources/images/transparent.gif"}},
+{
+          "id":"b0c05d20d07942519c51df8b82b1ff70",
+          "label":"",
+          "type":"textBox",
+          "styleType":"textBox",
+          "visible":true,
+          "style":{
+            "location":{
+              "x":320,
+              "y":175},
+            "size":{
+              "width":200,
+              "height":25}},
+          "adaptiveStyles":{
+}},
+{
+          "id":"cefc767654474d8eaaa8c2065c987ccc",
+          "label":"",
+          "type":"textBox",
+          "styleType":"textBox",
+          "visible":true,
+          "style":{
+            "location":{
+              "x":320,
+              "y":215},
+            "size":{
+              "width":200,
+              "height":25}},
+          "adaptiveStyles":{
+}},
+{
+          "id":"e7e6939a55bb4615baa456a5de6e1971",
+          "label":"",
+          "type":"textBox",
+          "styleType":"textBox",
+          "visible":true,
+          "style":{
+            "location":{
+              "x":320,
+              "y":250},
+            "size":{
+              "width":200,
+              "height":25}},
+          "adaptiveStyles":{
+}},
+{
+          "id":"8390aa5d9ad9469a93855e280b30a73b",
+          "label":"",
+          "type":"textBox",
+          "styleType":"textBox",
+          "visible":true,
+          "style":{
+            "fill":{
+              "fillType":"solid",
+              "color":0xFFE4E4E4},
+            "location":{
+              "x":320,
+              "y":285},
+            "size":{
+              "width":200,
+              "height":25}},
+          "adaptiveStyles":{
+}},
+{
+          "id":"f849d5a350194eb2b50d6afd918c589d",
+          "label":"",
+          "type":"textBox",
+          "styleType":"textBox",
+          "visible":true,
+          "style":{
+            "fill":{
+              "fillType":"solid",
+              "color":0xFFE4E4E4},
+            "location":{
+              "x":320,
+              "y":355},
+            "size":{
+              "width":200,
+              "height":25}},
+          "adaptiveStyles":{
+}},
+{
+          "id":"1608a979e84849d69d733f52300ff695",
+          "label":"",
+          "type":"buttonShape",
+          "styleType":"paragraph",
+          "visible":true,
+          "style":{
+            "fontSize":"16px",
+            "location":{
+              "x":260,
+              "y":80},
+            "size":{
+              "width":40,
+              "height":19}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"65da6f6ee4cb41f08990b75d398de0af",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "fontSize":"16px",
+                "location":{
+                  "x":260,
+                  "y":80},
+                "size":{
+                  "width":40,
+                  "height":19}},
+              "adaptiveStyles":{
+}}],
+          "interactionMap":{
+            "onClick":{
+              "description":"OnClick",
+              "cases":[{
+                  "description":"用例 1",
+                  "isNewIfGroup":false,
+                  "actions":[{
+                      "action":"linkWindow",
+                      "description":"在 当前窗口 打开 student",
+                      "target":{
+                        "targetType":"page",
+                        "url":"student.html",
+                        "includeVariables":true},
+                      "linkType":"current"}]}]}},
+          "tabbable":true,
+          "images":{
+            "normal~":"resources/images/transparent.gif"}},
+{
+          "id":"143242f3f8304df3a2a455606700e339",
+          "label":"",
+          "type":"textBox",
+          "styleType":"textBox",
+          "visible":true,
+          "style":{
+            "fill":{
+              "fillType":"solid",
+              "color":0xFFE4E4E4},
+            "location":{
+              "x":320,
+              "y":320},
+            "size":{
+              "width":200,
+              "height":25}},
+          "adaptiveStyles":{
+}},
+{
+          "id":"a58f2ac3347c477480adce2d5293f0f0",
+          "label":"",
+          "type":"button",
+          "styleType":"button",
+          "visible":true,
+          "style":{
+            "foreGroundFill":{
+              "fillType":"solid",
+              "color":0xFFFF66FF,
+              "opacity":1},
+            "location":{
+              "x":370,
+              "y":405},
+            "size":{
+              "width":100,
+              "height":25}},
+          "adaptiveStyles":{
+},
+          "interactionMap":{
+            "onClick":{
+              "description":"OnClick",
+              "cases":[{
+                  "description":"用例 1",
+                  "isNewIfGroup":false,
+                  "actions":[{
+                      "action":"fadeWidget",
+                      "description":"显示/隐藏部件",
+                      "objectsToFades":[]}]}]}},
+          "tabbable":true},
+{
+          "id":"519ef22ad8a64d27ba14c6b6f9162bdf",
+          "label":"",
+          "type":"buttonShape",
+          "styleType":"paragraph",
+          "visible":true,
+          "style":{
+            "fontSize":"16px",
+            "foreGroundFill":{
+              "fillType":"solid",
+              "color":0xFF00CC99,
+              "opacity":1},
+            "location":{
+              "x":530,
+              "y":300},
+            "size":{
+              "width":230,
+              "height":38}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"794110c33dce466c9b060be29a4251b5",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "fontSize":"16px",
+                "foreGroundFill":{
+                  "fillType":"solid",
+                  "color":0xFF00CC99,
+                  "opacity":1},
+                "location":{
+                  "x":530,
+                  "y":300},
+                "size":{
+                  "width":230,
+                  "height":38}},
+              "adaptiveStyles":{
+}}],
+          "interactionMap":{
+            "onClick":{
+              "description":"OnClick",
+              "cases":[{
+                  "description":"用例 1",
+                  "isNewIfGroup":false,
+                  "actions":[{
+                      "action":"linkWindow",
+                      "description":"在 当前窗口 打开 teacher",
+                      "target":{
+                        "targetType":"page",
+                        "url":"teacher.html",
+                        "includeVariables":true},
+                      "linkType":"current"}]}]}},
+          "tabbable":true,
+          "images":{
+            "normal~":"resources/images/transparent.gif"}}]}},
+  "masters":{
+},
+  "objectPaths":{
+    "03af19c03f0e41e6b1189b04239b0cd2":{
+      "scriptId":"u0"},
+    "99887a46e27b43c78e240f83758899ea":{
+      "scriptId":"u1"},
+    "a37b3d08506946d483d7e983d1a7b7f2":{
+      "scriptId":"u2"},
+    "95f69dd281d04b748ca510232b109d1f":{
+      "scriptId":"u3"},
+    "d8cb23c391bf4bbc8914ef5bd07e1ae0":{
+      "scriptId":"u4"},
+    "b0c05d20d07942519c51df8b82b1ff70":{
+      "scriptId":"u5"},
+    "cefc767654474d8eaaa8c2065c987ccc":{
+      "scriptId":"u6"},
+    "e7e6939a55bb4615baa456a5de6e1971":{
+      "scriptId":"u7"},
+    "8390aa5d9ad9469a93855e280b30a73b":{
+      "scriptId":"u8"},
+    "f849d5a350194eb2b50d6afd918c589d":{
+      "scriptId":"u9"},
+    "1608a979e84849d69d733f52300ff695":{
+      "scriptId":"u10"},
+    "65da6f6ee4cb41f08990b75d398de0af":{
+      "scriptId":"u11"},
+    "143242f3f8304df3a2a455606700e339":{
+      "scriptId":"u12"},
+    "a58f2ac3347c477480adce2d5293f0f0":{
+      "scriptId":"u13"},
+    "519ef22ad8a64d27ba14c6b6f9162bdf":{
+      "scriptId":"u14"},
+    "794110c33dce466c9b060be29a4251b5":{
+      "scriptId":"u15"}}});

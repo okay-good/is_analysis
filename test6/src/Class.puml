@@ -1,0 +1,119 @@
+@startuml
+class University{
+id  学校的Id值
+code  学校代码  
+name  学校名字  
+location  学习所在地址  
+level  学校等级  
+headmaster  校长名字  
+}
+
+class Academy{
+ id  学院ID值  
+ name 学院名字
+ universityId  学校的Id值
+ }
+
+class Account{
+id  账号的主键Id值
+universityId  学校表的Id值
+account  登录账号  
+password  密码MD5加密
+role  角色分类
+isAlive  是否可用
+}
+class Class{
+id 班级的Id值
+size 该班学生总数
+academyId  学院Id值
+major  专业
+grade  年级
+classNo  班级数
+}
+class Student {
+id  学生信息主键  
+studentNo  学号
+accountId  账号表的Id值
+name  学生姓名  
+sex  性别  
+age  年龄
+classId 所属班级Id值
+}
+
+class Teacher{
+id Id值
+accountId 账号表的Id值
+teacherNo 教师编号
+name 姓名
+sex 性别
+age 年龄
+position 职称
+degree 学历
+}
+
+class Course{
+id 课程的Id值
+code 课程代码
+name 课程名字
+learnHours 学时
+universityId 学校Id
+}
+
+
+class Teacher_Course_Student{
+id Id值
+teacherId 教师Id值
+studentId 学生Id值
+courseId 课程Id值
+startTime 开课时间
+totalTestScore 实验总分
+}
+
+class Test{
+id 实验Id值
+name 实验名字
+number 实验几
+time 发布的时间
+desc 实验描述
+courseId 课程Id值
+}
+class TestSub{
+id  Id值
+limitScore 最高可得分
+kind  评分项
+testId 实验Id值
+}
+class TestScore{
+id Id值
+score 实验得分
+number 第几次实验
+time 评分日期
+courseId 课程Id值
+studentId 学生Id值
+}
+class TestSub_TestScore{
+id Id值
+trueScore 实际得分
+mark 评语
+testSubId 小评分项的Id值
+testScoreId 某次实验得分的Id值
+}
+
+Academy "*" --"1"  University
+Account "*"  -- "1"  University
+Account "1" -- "1" Student
+Account "1" -- "1" Teacher
+Class "1" -- "*" Student
+
+Teacher_Course_Student "1" -- "1" Student
+Teacher_Course_Student "*" -- "1" Teacher
+Teacher_Course_Student "*" -- "1" Course
+Test "*" --"1" Course
+TestSub "*" --"1" Test
+Student "1"--"*" TestScore
+TestScore "*" --"1" Course
+TestSub_TestScore "*" --"1" TestScore
+TestSub_TestScore "1" --"1" TestSub
+
+
+@enduml

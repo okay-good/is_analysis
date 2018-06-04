@@ -1,0 +1,353 @@
+﻿$axure.loadCurrentPage({
+  "url":"teacherinfo.html",
+  "generationDate":new Date(1528116432200.76),
+  "isCanvasEnabled":false,
+  "variables":["OnLoadVariable"],
+  "page":{
+    "packageId":"6f2000bc50e2466ea1623fab2b453251",
+    "type":"Axure:Page",
+    "name":"teacherInfo",
+    "notes":{
+},
+    "style":{
+      "baseStyle":"627587b6038d43cca051c114ac41ad32",
+      "pageAlignment":"near",
+      "fill":{
+        "fillType":"solid",
+        "color":0xFFFFFFFF},
+      "image":null,
+      "imageHorizontalAlignment":"near",
+      "imageVerticalAlignment":"near",
+      "imageRepeat":"auto",
+      "favicon":null,
+      "sketchFactor":"0",
+      "colorStyle":"appliedColor",
+      "fontName":"应用字体",
+      "borderWidth":"0"},
+    "adaptiveStyles":{
+},
+    "interactionMap":{
+},
+    "diagram":{
+      "objects":[{
+          "id":"15d9947772ac48d592f7b6354a10380d",
+          "label":"",
+          "type":"flowShape",
+          "styleType":"flowShape",
+          "visible":true,
+          "style":{
+            "location":{
+              "x":300,
+              "y":80},
+            "size":{
+              "width":640,
+              "height":420}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"bf2869002a554760a3cf76c33cdbba32",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "location":{
+                  "x":300,
+                  "y":80},
+                "size":{
+                  "width":640,
+                  "height":420}},
+              "adaptiveStyles":{
+}}],
+          "interactionMap":{
+            "onClick":{
+              "description":"OnClick",
+              "cases":[{
+                  "description":"用例 1",
+                  "isNewIfGroup":false,
+                  "actions":[{
+                      "action":"fadeWidget",
+                      "description":"显示/隐藏部件",
+                      "objectsToFades":[]}]}]}},
+          "tabbable":true,
+          "images":{
+            "normal~":"images/teacherinfo/u0.png"}},
+{
+          "id":"a2a45d890a324f4ea1fd75b17bb366f5",
+          "label":"",
+          "type":"buttonShape",
+          "styleType":"paragraph",
+          "visible":true,
+          "style":{
+            "fontSize":"16px",
+            "location":{
+              "x":310,
+              "y":100},
+            "size":{
+              "width":60,
+              "height":19}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"35fff56c20f640eeb1a0a1e450671351",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "fontSize":"16px",
+                "location":{
+                  "x":310,
+                  "y":100},
+                "size":{
+                  "width":60,
+                  "height":19}},
+              "adaptiveStyles":{
+}}],
+          "interactionMap":{
+            "onClick":{
+              "description":"OnClick",
+              "cases":[{
+                  "description":"用例 1",
+                  "isNewIfGroup":false,
+                  "actions":[{
+                      "action":"linkWindow",
+                      "description":"在 当前窗口 打开 teacher",
+                      "target":{
+                        "targetType":"page",
+                        "url":"teacher.html",
+                        "includeVariables":true},
+                      "linkType":"current"}]}]}},
+          "tabbable":true,
+          "images":{
+            "normal~":"resources/images/transparent.gif"}},
+{
+          "id":"5c6ffef4d19b4fda914e9cfa939cea1b",
+          "label":"",
+          "type":"textBox",
+          "styleType":"textBox",
+          "visible":true,
+          "style":{
+            "foreGroundFill":{
+              "fillType":"solid",
+              "color":0xFF6B6B6B,
+              "opacity":1},
+            "location":{
+              "x":420,
+              "y":195.5},
+            "size":{
+              "width":200,
+              "height":25}},
+          "adaptiveStyles":{
+}},
+{
+          "id":"5d7a389fc6fe4ce1aa8fe6f5d165c960",
+          "label":"",
+          "type":"textBox",
+          "styleType":"textBox",
+          "visible":true,
+          "style":{
+            "fill":{
+              "fillType":"solid",
+              "color":0xFFCCCCFF},
+            "location":{
+              "x":420,
+              "y":230.5},
+            "size":{
+              "width":200,
+              "height":25}},
+          "adaptiveStyles":{
+}},
+{
+          "id":"a7ec5562abc44dcfaa297fb2827d5edb",
+          "label":"",
+          "type":"textBox",
+          "styleType":"textBox",
+          "visible":true,
+          "style":{
+            "foreGroundFill":{
+              "fillType":"solid",
+              "color":0xFF6B6B6B,
+              "opacity":1},
+            "location":{
+              "x":420,
+              "y":305.5},
+            "size":{
+              "width":200,
+              "height":25}},
+          "adaptiveStyles":{
+}},
+{
+          "id":"161e2ba304a941449df83e1b85770016",
+          "label":"",
+          "type":"textBox",
+          "styleType":"textBox",
+          "visible":true,
+          "style":{
+            "fill":{
+              "fillType":"solid",
+              "color":0xFFCCCCFF},
+            "location":{
+              "x":420,
+              "y":270.5},
+            "size":{
+              "width":200,
+              "height":25}},
+          "adaptiveStyles":{
+}},
+{
+          "id":"9c3aa1773b4c44dba9074bad538d9222",
+          "label":"",
+          "type":"textBox",
+          "styleType":"textBox",
+          "visible":true,
+          "style":{
+            "fill":{
+              "fillType":"solid",
+              "color":0xFFCCCCFF},
+            "location":{
+              "x":420,
+              "y":160.5},
+            "size":{
+              "width":200,
+              "height":25}},
+          "adaptiveStyles":{
+}},
+{
+          "id":"71135f98c1c149fdbb12b402689e8d54",
+          "label":"",
+          "type":"textBox",
+          "styleType":"textBox",
+          "visible":true,
+          "style":{
+            "foreGroundFill":{
+              "fillType":"solid",
+              "color":0xFF6B6B6B,
+              "opacity":1},
+            "location":{
+              "x":420,
+              "y":345.5},
+            "size":{
+              "width":200,
+              "height":25}},
+          "adaptiveStyles":{
+}},
+{
+          "id":"792b111a8f0642299a81d254e23c499f",
+          "label":"",
+          "type":"button",
+          "styleType":"button",
+          "visible":true,
+          "style":{
+            "foreGroundFill":{
+              "fillType":"solid",
+              "color":0xFFFF66FF,
+              "opacity":1},
+            "location":{
+              "x":460,
+              "y":395},
+            "size":{
+              "width":100,
+              "height":25}},
+          "adaptiveStyles":{
+},
+          "interactionMap":{
+            "onClick":{
+              "description":"OnClick",
+              "cases":[{
+                  "description":"用例 1",
+                  "isNewIfGroup":false,
+                  "actions":[{
+                      "action":"fadeWidget",
+                      "description":"显示/隐藏部件",
+                      "objectsToFades":[]}]}]}},
+          "tabbable":true},
+{
+          "id":"08e21dfb8b1b48b29821ceb45f5ba9c7",
+          "label":"",
+          "type":"buttonShape",
+          "styleType":"paragraph",
+          "visible":true,
+          "style":{
+            "fontSize":"16px",
+            "foreGroundFill":{
+              "fillType":"solid",
+              "color":0xFF00CC99,
+              "opacity":1},
+            "location":{
+              "x":660,
+              "y":360},
+            "size":{
+              "width":230,
+              "height":38}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"097214615bbc4218958e405a83c03357",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "fontSize":"16px",
+                "foreGroundFill":{
+                  "fillType":"solid",
+                  "color":0xFF00CC99,
+                  "opacity":1},
+                "location":{
+                  "x":660,
+                  "y":360},
+                "size":{
+                  "width":230,
+                  "height":38}},
+              "adaptiveStyles":{
+}}],
+          "interactionMap":{
+            "onClick":{
+              "description":"OnClick",
+              "cases":[{
+                  "description":"用例 1",
+                  "isNewIfGroup":false,
+                  "actions":[{
+                      "action":"linkWindow",
+                      "description":"在 当前窗口 打开 teacher",
+                      "target":{
+                        "targetType":"page",
+                        "url":"teacher.html",
+                        "includeVariables":true},
+                      "linkType":"current"}]}]}},
+          "tabbable":true,
+          "images":{
+            "normal~":"resources/images/transparent.gif"}}]}},
+  "masters":{
+},
+  "objectPaths":{
+    "15d9947772ac48d592f7b6354a10380d":{
+      "scriptId":"u0"},
+    "bf2869002a554760a3cf76c33cdbba32":{
+      "scriptId":"u1"},
+    "a2a45d890a324f4ea1fd75b17bb366f5":{
+      "scriptId":"u2"},
+    "35fff56c20f640eeb1a0a1e450671351":{
+      "scriptId":"u3"},
+    "5c6ffef4d19b4fda914e9cfa939cea1b":{
+      "scriptId":"u4"},
+    "5d7a389fc6fe4ce1aa8fe6f5d165c960":{
+      "scriptId":"u5"},
+    "a7ec5562abc44dcfaa297fb2827d5edb":{
+      "scriptId":"u6"},
+    "161e2ba304a941449df83e1b85770016":{
+      "scriptId":"u7"},
+    "9c3aa1773b4c44dba9074bad538d9222":{
+      "scriptId":"u8"},
+    "71135f98c1c149fdbb12b402689e8d54":{
+      "scriptId":"u9"},
+    "792b111a8f0642299a81d254e23c499f":{
+      "scriptId":"u10"},
+    "08e21dfb8b1b48b29821ceb45f5ba9c7":{
+      "scriptId":"u11"},
+    "097214615bbc4218958e405a83c03357":{
+      "scriptId":"u12"}}});

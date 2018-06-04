@@ -1,0 +1,35 @@
+@startuml
+left to right direction
+skinparam packageStyle rectangle
+:教师: as Teacher
+:学生: as Student
+rectangle 用例 {
+
+(登出)  <--- Student
+(个人信息查询) <--- Student
+(登录)<--- Student
+(密码修改) <--- Student
+(个人信息修改)<--Student
+(成绩查询) <-- Student
+(选课) <-- Student
+
+Teacher --> (登出)
+Teacher --> (个人信息查询)
+Teacher --> (个人信息修改)
+Teacher --> (密码修改)
+Teacher --> (登录)
+Teacher --> (成绩评定)
+Teacher --> (学生信息列表查询)
+Teacher --> (成绩查询)
+Teacher --> (选课)
+
+(个人信息查询)  .> (登录) : include
+(密码修改)  .> (登录) : include
+(个人信息修改).>(登录) : include
+(成绩评定).>(登录):include
+(学生信息列表查询).>(登录):include
+(登出).>(登录):include
+(成绩查询).>(登录):include
+(选课).>(登录):include
+}
+@enduml
