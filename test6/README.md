@@ -23,7 +23,7 @@
 <img src="system.png"/> 
 
 
-### 界面设计参见:<a href="https://FateBerserker.github.io/is_analysis/test6/UI/index.html">https://FateBerserker.github.io/is_analysis/test6/UI/index.html
+### 界面设计参见:<a href="https://FateBerserker.github.io/is_analysis/test6/UI/home.html">https://FateBerserker.github.io/is_analysis/test6/UI/home.html
 </a>
 
 ## 3.用例图设计 <a href="src/UseCase.puml">源码</a>
@@ -39,13 +39,13 @@
 ## <a href="./数据库表设计.md"> &nbsp;&nbsp;&nbsp;参见数据库设计</a>
 
 ## 6.用例及界面详细设计
-### 1. <a href="./用例/登录.md">"登录"用例</a>,<a href="https://FateBerserker.github.io/is_analysis/test6/UI/index.html">界面</a>
+### 1. <a href="./用例/登录.md">"登录"用例</a>,<a href="https://FateBerserker.github.io/is_analysis/test6/UI/home.html">界面</a>
 
 
 
 ### 2. <a href="./用例/登出.md">"登出"用例</a>,<a href="https://FateBerserker.github.io/is_analysis/test6/UI/student.html">界面</a>
 
-### 3. <a href="./用例/个人信息查询.md">"个人信息查询"用例</a>,<a href="#">界面</a>
+### 3. <a href="./用例/个人信息查询.md">"个人信息查询"用例</a>,<a href="https://FateBerserker.github.io/is_analysis/test6/UI/student.html">界面</a>
 
 ### 4. <a href="./用例/个人信息修改.md">"个人信息修改"用例</a>,<a href="https://FateBerserker.github.io/is_analysis/test6/UI/teacherInfo.html">界面</a>
 

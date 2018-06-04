@@ -25,6 +25,7 @@
 	<td>课程的Id值</td>
 </tr>
 </table>
+
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;返回实例:
 
 	    {
@@ -34,6 +35,7 @@
 		}
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;返回参数说明:
+
 <table cellspacing="0" style="width:600px;">
 <tr>
 	<td>参数名称</td>

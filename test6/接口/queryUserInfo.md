@@ -25,6 +25,7 @@
 	<td>用户的角色，老师或者学生</td>
 </tr>
 </table>
+
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;返回实例:
 	    {
 		"data":{
@@ -41,6 +42,7 @@
 		}
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;返回参数说明:
+
 <table cellspacing="0" style="width:600px;">
 <tr>
 	<td>参数名称</td>
