@@ -58,5 +58,5 @@
 ### 8. <a href="./用例/成绩查询.md">"成绩查询"用例</a>,<a href="https://FateBerserker.github.io/is_analysis/test6/UI/student.html">界面</a>
 
 ### 9. <a href="./用例/学生选课.md">"学生选课"用例</a>,<a href="https://FateBerserker.github.io/is_analysis/test6/UI/selectcourse.html">界面</a>
-
+ 
 ### 10. <a href="./用例/教师选课.md">"教师选课"用例</a>,<a href="https://FateBerserker.github.io/is_analysis/test6/UI/selectcourse.html">界面</a>
