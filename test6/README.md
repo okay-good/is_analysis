@@ -47,16 +47,16 @@
 
 ### 3. <a href="./用例/个人信息查询.md">"个人信息查询"用例</a>,<a href="https://FateBerserker.github.io/is_analysis/test6/UI/student.html">界面</a>
 
-### 4. <a href="./用例/个人信息修改.md">"个人信息修改"用例</a>,<a href="https://FateBerserker.github.io/is_analysis/test6/UI/teacherInfo.html">界面</a>
+### 4. <a href="./用例/个人信息修改.md">"个人信息修改"用例</a>,<a href="https://FateBerserker.github.io/is_analysis/test6/UI/teacherinfo.html">界面</a>
 
 ### 5. <a href="./用例/密码修改.md">"密码修改"用例</a>,<a href="https://FateBerserker.github.io/is_analysis/test6/UI/updatepwd.html">界面</a>
 
-### 6. <a href="./用例/成绩评定.md">"成绩评定"用例</a>,<a href="https://FateBerserker.github.io/is_analysis/test6/UI/makeScore.html">界面</a>
+### 6. <a href="./用例/成绩评定.md">"成绩评定"用例</a>,<a href="https://FateBerserker.github.io/is_analysis/test6/UI/makescore.html">界面</a>
 
 ### 7. <a href="./用例/学生信息列表查询.md">"学生信息列表查询"用例</a>,<a href="https://FateBerserker.github.io/is_analysis/test6/UI/teacher.html">界面</a>
 
 ### 8. <a href="./用例/成绩查询.md">"成绩查询"用例</a>,<a href="https://FateBerserker.github.io/is_analysis/test6/UI/student.html">界面</a>
 
-### 9. <a href="./用例/学生选课.md">"学生选课"用例</a>,<a href="https://FateBerserker.github.io/is_analysis/test6/UI/selectCourse.html">界面</a>
+### 9. <a href="./用例/学生选课.md">"学生选课"用例</a>,<a href="https://FateBerserker.github.io/is_analysis/test6/UI/selectcourse.html">界面</a>
 
-### 10. <a href="./用例/教师选课.md">"教师选课"用例</a>,<a href="https://FateBerserker.github.io/is_analysis/test6/UI/selectCourse.html">界面</a>
+### 10. <a href="./用例/教师选课.md">"教师选课"用例</a>,<a href="https://FateBerserker.github.io/is_analysis/test6/UI/selectcourse.html">界面</a>
