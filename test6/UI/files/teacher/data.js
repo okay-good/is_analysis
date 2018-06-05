@@ -1,6 +1,6 @@
 ﻿$axure.loadCurrentPage({
   "url":"teacher.html",
-  "generationDate":new Date(1528116432100.49),
+  "generationDate":new Date(1528189356930.04),
   "isCanvasEnabled":false,
   "variables":["OnLoadVariable"],
   "page":{
@@ -299,15 +299,14 @@
           "label":"",
           "type":"table",
           "styleType":"table",
-          "visible":false,
+          "visible":true,
           "style":{
             "location":{
               "x":250,
               "y":280},
             "size":{
               "width":400,
-              "height":150},
-            "visible":false},
+              "height":150}},
           "adaptiveStyles":{
 },
           "objects":[{
@@ -1278,11 +1277,11 @@
               "color":0xFF00CC99,
               "opacity":1},
             "location":{
-              "x":495,
+              "x":450,
               "y":230},
             "size":{
-              "width":250,
-              "height":20}},
+              "width":295,
+              "height":40}},
           "adaptiveStyles":{
 },
           "objects":[{
@@ -1299,11 +1298,11 @@
                   "color":0xFF00CC99,
                   "opacity":1},
                 "location":{
-                  "x":495,
+                  "x":450,
                   "y":230},
                 "size":{
-                  "width":250,
-                  "height":20}},
+                  "width":295,
+                  "height":40}},
               "adaptiveStyles":{
 }}],
           "images":{

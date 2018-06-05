@@ -1,6 +1,6 @@
 ﻿$axure.loadCurrentPage({
   "url":"teacherinfo.html",
-  "generationDate":new Date(1528116432200.76),
+  "generationDate":new Date(1528189357014.27),
   "isCanvasEnabled":false,
   "variables":["OnLoadVariable"],
   "page":{

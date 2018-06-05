@@ -1,6 +1,6 @@
 ﻿$axure.loadCurrentPage({
   "url":"makescore.html",
-  "generationDate":new Date(1528116432244.88),
+  "generationDate":new Date(1528189357063.4),
   "isCanvasEnabled":false,
   "variables":["OnLoadVariable"],
   "page":{

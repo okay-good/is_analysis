@@ -215,7 +215,6 @@
   position:absolute;
   left:180px;
   top:210px;
-  visibility:hidden;
 }
 #u14_state0 {
   position:relative;
@@ -509,7 +508,7 @@
   left:468px;
   top:152px;
   width:250px;
-  height:20px;
+  height:68px;
   font-size:16px;
   color:#00CC99;
 }
@@ -518,7 +517,7 @@
   left:0px;
   top:0px;
   width:250px;
-  height:20px;
+  height:68px;
 }
 #u40 {
   position:absolute;

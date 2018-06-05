@@ -1,6 +1,6 @@
 ﻿$axure.loadCurrentPage({
   "url":"student.html",
-  "generationDate":new Date(1528116432002.23),
+  "generationDate":new Date(1528189356830.78),
   "isCanvasEnabled":false,
   "variables":["OnLoadVariable"],
   "page":{
@@ -422,15 +422,14 @@
           "label":"d1",
           "type":"dynamicPanel",
           "styleType":"dynamicPanel",
-          "visible":false,
+          "visible":true,
           "style":{
             "location":{
               "x":180,
               "y":210},
             "size":{
               "width":10,
-              "height":10},
-            "visible":false},
+              "height":10}},
           "adaptiveStyles":{
 },
           "scrollbars":"none",
@@ -1020,7 +1019,7 @@
               "y":152},
             "size":{
               "width":250,
-              "height":20}},
+              "height":68}},
           "adaptiveStyles":{
 },
           "objects":[{
@@ -1041,7 +1040,7 @@
                   "y":152},
                 "size":{
                   "width":250,
-                  "height":20}},
+                  "height":68}},
               "adaptiveStyles":{
 }}],
           "images":{
