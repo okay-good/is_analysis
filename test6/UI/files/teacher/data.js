@@ -1,6 +1,6 @@
 ﻿$axure.loadCurrentPage({
   "url":"teacher.html",
-  "generationDate":new Date(1528189356930.04),
+  "generationDate":new Date(1528444894301.34),
   "isCanvasEnabled":false,
   "variables":["OnLoadVariable"],
   "page":{
@@ -1006,6 +1006,21 @@
                       "height":30}},
                   "adaptiveStyles":{
 }}],
+              "interactionMap":{
+                "onClick":{
+                  "description":"OnClick",
+                  "cases":[{
+                      "description":"用例 1",
+                      "isNewIfGroup":false,
+                      "actions":[{
+                          "action":"linkWindow",
+                          "description":"在 当前窗口 打开 makeScore",
+                          "target":{
+                            "targetType":"page",
+                            "url":"makescore.html",
+                            "includeVariables":true},
+                          "linkType":"current"}]}]}},
+              "tabbable":true,
               "images":{
                 "normal~":"images/teacher/u19.png"}},
 {
@@ -1051,6 +1066,21 @@
                       "height":30}},
                   "adaptiveStyles":{
 }}],
+              "interactionMap":{
+                "onClick":{
+                  "description":"OnClick",
+                  "cases":[{
+                      "description":"用例 1",
+                      "isNewIfGroup":false,
+                      "actions":[{
+                          "action":"linkWindow",
+                          "description":"在 当前窗口 打开 makeScore",
+                          "target":{
+                            "targetType":"page",
+                            "url":"makescore.html",
+                            "includeVariables":true},
+                          "linkType":"current"}]}]}},
+              "tabbable":true,
               "images":{
                 "normal~":"images/teacher/u19.png"}},
 {
@@ -1096,6 +1126,21 @@
                       "height":30}},
                   "adaptiveStyles":{
 }}],
+              "interactionMap":{
+                "onClick":{
+                  "description":"OnClick",
+                  "cases":[{
+                      "description":"用例 1",
+                      "isNewIfGroup":false,
+                      "actions":[{
+                          "action":"linkWindow",
+                          "description":"在 当前窗口 打开 makeScore",
+                          "target":{
+                            "targetType":"page",
+                            "url":"makescore.html",
+                            "includeVariables":true},
+                          "linkType":"current"}]}]}},
+              "tabbable":true,
               "images":{
                 "normal~":"images/teacher/access_u51.png"}}]},
 {

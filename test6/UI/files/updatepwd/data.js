@@ -1,6 +1,6 @@
 ﻿$axure.loadCurrentPage({
   "url":"updatepwd.html",
-  "generationDate":new Date(1528189356989.2),
+  "generationDate":new Date(1528444894363.5),
   "isCanvasEnabled":false,
   "variables":["OnLoadVariable"],
   "page":{

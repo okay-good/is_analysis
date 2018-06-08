@@ -1,6 +1,6 @@
 ﻿$axure.loadCurrentPage({
   "url":"selectcourse.html",
-  "generationDate":new Date(1528189357092.47),
+  "generationDate":new Date(1528444894477.82),
   "isCanvasEnabled":false,
   "variables":["OnLoadVariable"],
   "page":{
