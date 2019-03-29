@@ -1,0 +1,33 @@
+#端口
+server:
+  port: 80
+  
+#数据库
+spring:
+  datasource:
+    username: root
+    password: 521433
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql:///graduatedb
+    
+  #mvc
+  mvc:
+    view:
+      prefix: /pages/
+      suffix: .jsp
+#    favicon:
+#      enabled: false
+
+#mybatis
+#mybatis:
+#  #config-location: classpath:mybatis/mybatisConfig.xml
+#  mapper-locations: classpath:mybatis/*.xml
+#  type-aliases-package: com.graduate.entity
+##mybatis-plus
+##  configuration: 
+##    mapUnderscoreToCamelCaseL: false
+##    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+#mybatis-plus:
+#  configuration:
+#    map-underscore-to-camel-case: false
+#    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
